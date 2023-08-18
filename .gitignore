@@ -1,0 +1,11 @@
+_notes
+Thumbs.db
+.DS_Store
+.idea
+.phpstorm.meta.php
+.vscode
+node_modules
+PATCHES.txt
+mysqldumper
+phpMyAdmin-*
+adminer*
