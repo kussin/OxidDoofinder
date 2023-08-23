@@ -1,6 +1,6 @@
 {
     "name":        "kussin/doofinder",
-    "version":     "0.0.1",
+    "version":     "1.0.0",
     "description": "Kussin | Doofinder Connector for OXID eShop",
     "type":        "oxideshop-module",
     "keywords":    [
