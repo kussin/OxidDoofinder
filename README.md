@@ -7,7 +7,8 @@ with a search bar from [Doofinder](https://www.doofinder.com/).
 
 **The following configuration options are available:**
 
-TODO: Will follow soon
+1. [`installationId`](https://github.com/kussin/OxidDoofinder/blob/main/modules/kussin/doofinder/views/blocks/base_js.tpl#L11) - Doofinder Installation ID
+2. [`zone`](https://github.com/kussin/OxidDoofinder/blob/main/modules/kussin/doofinder/views/blocks/base_js.tpl#L12) - Doofinder Zone
 
 ## Requirement
 
