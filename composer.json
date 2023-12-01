@@ -41,7 +41,7 @@
     "require":     {
         "php": ">=7.4",
         "oxid-esales/oxideshop-ce": "^6.0",
-        "wmdk/wmdkffexportqueue": "*",
+        "wmdk/wmdkffexportqueue": "^1.9"
     },
     "autoload":    {
         "psr-4": {
