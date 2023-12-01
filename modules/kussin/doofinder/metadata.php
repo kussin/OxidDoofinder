@@ -2,10 +2,9 @@
 /**
  * Metadata version
  */
+$sMetadataVersion = '2.0';
 
 use OxidEsales\Eshop\Application\Controller\SearchController;
-
-$sMetadataVersion = '2.0';
 
 /**
  * Module information
@@ -15,7 +14,7 @@ $aModule = array(
     'title' => 'Kussin | Doofinder Connector for OXID eShop',
     'description' => 'Doofinder Connector for OXID eShop',
     'thumbnail' => 'module.png',
-    'version' => '1.0.0',
+    'version' => '1.1.0',
     'author' => 'Daniel Kussin',
     'url' => 'https://www.kussin.de',
     'email' => 'daniel.kussin@kussin.de',
@@ -35,6 +34,11 @@ $aModule = array(
             'block' => 'widget_header_search_form',
             'file' => '/views/blocks/widget_header_search_form.tpl'
         ),
+        array(
+            'template' => 'page/details/inc/related_products.tpl',
+            'block' => 'details_relatedproducts_crossselling',
+            'file' => '/views/blocks/details_relatedproducts_crossselling.tpl'
+        ),
     ),
 
     'settings' => array(
@@ -49,6 +53,43 @@ $aModule = array(
             'name' => 'sKussinDoofinderZone',
             'type' => 'str',
             'value' => 'eu1',
+        ),
+
+        array(
+            'group' => 'sKussinDoofinderRecommendationsSettings',
+            'name' => 'blKussinDoofinderRecommendationsEnabled',
+            'type' => 'bool',
+            'value' => 0,
+        ),
+        array(
+            'group' => 'sKussinDoofinderRecommendationsSettings',
+            'name' => 'blKussinDoofinderRecommendationsSubheadingEnabled',
+            'type' => 'bool',
+            'value' => 0,
+        ),
+        array(
+            'group' => 'sKussinDoofinderRecommendationsSettings',
+            'name' => 'sKussinDoofinderRecommendationsHashId',
+            'type' => 'str',
+            'value' => 'aeb873e432c45219ebf63b36c78811f0',
+        ),
+        array(
+            'group' => 'sKussinDoofinderRecommendationsSettings',
+            'name' => 'iKussinDoofinderRecommendationsNumberOfProducts',
+            'type' => 'str',
+            'value' => 10,
+        ),
+        array(
+            'group' => 'sKussinDoofinderRecommendationsSettings',
+            'name' => 'sKussinDoofinderRecommendationsCurrencySymbol',
+            'type' => 'str',
+            'value' => '€',
+        ),
+        array(
+            'group' => 'sKussinDoofinderRecommendationsSettings',
+            'name' => 'sKussinDoofinderRecommendationsCurrencyFormat',
+            'type' => 'str',
+            'value' => '%v %S',
         ),
     )
 );

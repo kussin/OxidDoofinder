@@ -45,7 +45,7 @@ Please use the [Github Issues](https://github.com/kussin/OxidDoofinder/issues) f
 
 Kussin | eCommerce und Online-Marketing GmbH<br>
 Fahltskamp 3<br>
-25462 Rellingen<br>
+25421 Pinneberg<br>
 Germany
 
 Fon: +49 (4101) 85868 - 0<br>
