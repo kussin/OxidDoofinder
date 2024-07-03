@@ -5,6 +5,7 @@ $aLang = array(
     'SHOP_MODULE_GROUP_sKussinDoofinderSettings' => 'Doofinder settings',
     'SHOP_MODULE_sKussinDoofinderInstallationId' => 'Installation id',
     'SHOP_MODULE_sKussinDoofinderZone' => 'Zone',
+    'SHOP_MODULE_sKussinDoofinderSearchHashId' => 'Seach Hash ID',
 
     'SHOP_MODULE_GROUP_sKussinDoofinderRecommendationsSettings' => 'Recommendations settings',
     'SHOP_MODULE_blKussinDoofinderRecommendationsEnabled' => 'Enable recommendations',

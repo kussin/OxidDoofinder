@@ -14,7 +14,7 @@ $aModule = array(
     'title' => 'Kussin | Doofinder Connector for OXID eShop',
     'description' => 'Doofinder Connector for OXID eShop',
     'thumbnail' => 'module.png',
-    'version' => '1.1.0.1',
+    'version' => '1.1.1',
     'author' => 'Daniel Kussin',
     'url' => 'https://www.kussin.de',
     'email' => 'daniel.kussin@kussin.de',
@@ -53,6 +53,12 @@ $aModule = array(
             'name' => 'sKussinDoofinderZone',
             'type' => 'str',
             'value' => 'eu1',
+        ),
+        array(
+            'group' => 'sKussinDoofinderSettings',
+            'name' => 'sKussinDoofinderSearchHashId',
+            'type' => 'str',
+            'value' => '#f2b9',
         ),
 
         array(
