@@ -1,7 +1,7 @@
 {
     "name":        "kussin/doofinder",
-    "version":     "1.1.1",
-    "description": "Kussin | Doofinder Connector for OXID eShop",
+    "version":     "1.1.1-bwc",
+    "description": "Kussin | Doofinder Connector for OXID eShop 6.0 (BWC Version)",
     "type":        "oxideshop-module",
     "keywords":    [
         "wmdk",
@@ -39,7 +39,7 @@
         }
     },
     "require":     {
-        "php": ">=7.4",
+        "php": ">=7.0",
         "oxid-esales/oxideshop-ce": "^6.0",
         "wmdk/wmdkffexportqueue": "^1.9"
     },

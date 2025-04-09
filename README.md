@@ -1,4 +1,4 @@
-# Kussin | Doofinder Connector for OXID eShop
+# Kussin | Doofinder Connector for OXID eShop 6.0 (BWC Version)
 
 Kussin | Doofinder Connector for OXID eShop Kussin | Doofinder Connector for OXID eShop replaces OXID eShop search bar 
 with a search bar from [Doofinder](https://www.doofinder.com/).
@@ -12,8 +12,8 @@ with a search bar from [Doofinder](https://www.doofinder.com/).
 
 ## Requirement
 
-1. OXID eSales CE/PE/EE v6.2.5 or newer
-2. PHP 7.4 or newer
+1. OXID eSales CE/PE/EE v6.0.x
+2. PHP 7.0 or newer
 
 ## Installation Guide
 
@@ -57,4 +57,4 @@ Email: info@kussin.de
 
 ## Copyright
 
-&copy; 2006-2023 Kussin | eCommerce und Online-Marketing GmbH
+&copy; 2006-2025 Kussin | eCommerce und Online-Marketing GmbH

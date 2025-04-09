@@ -1,4 +1,4 @@
-# Kussin | Doofinder Connector for OXID eShop
+# Kussin | Doofinder Connector for OXID eShop 6.0 (BWC Version)
 
 The module replaces OXID eShop search bar with a search bar from [Doofinder](https://www.doofinder.com/).
 Basically it does the whole [Installation Process Setp 4](https://support.doofinder.com/getting-started/installing-doofinder#step-4-script) 
@@ -33,4 +33,4 @@ Email: info@kussin.de
 
 ## Copyright
 
-&copy; 2006-2023 Kussin | eCommerce und Online-Marketing GmbH
+&copy; 2006-2025 Kussin | eCommerce und Online-Marketing GmbH
