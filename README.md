@@ -13,7 +13,7 @@ with a search bar from [Doofinder](https://www.doofinder.com/).
 ## Requirement
 
 1. OXID eSales CE/PE/EE v6.0.x
-2. PHP 7.0 or newer
+2. PHP 5.6 or newer
 
 ## Installation Guide
 
