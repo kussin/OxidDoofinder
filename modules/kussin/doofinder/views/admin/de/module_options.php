@@ -14,4 +14,8 @@ $aLang = array(
     'SHOP_MODULE_iKussinDoofinderRecommendationsNumberOfProducts' => 'Anzahl der Produkte',
     'SHOP_MODULE_sKussinDoofinderRecommendationsCurrencySymbol' => 'Währungssymbol',
     'SHOP_MODULE_sKussinDoofinderRecommendationsCurrencyFormat' => 'Währungsdarstellung (Standard: %v %S)',
+
+    'SHOP_MODULE_GROUP_sKussinDoofinderFilterSettings' => 'Filter Einstellungen',
+    'SHOP_MODULE_blKussinDoofinderFilterEnabled' => 'Aktiviere Filter',
+    'SHOP_MODULE_aKussinDoofinderFilterMapping' => 'Attribute Mapping',
 );

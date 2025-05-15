@@ -14,7 +14,7 @@ $aModule = array(
     'title' => 'Kussin | Doofinder Connector for OXID eShop',
     'description' => 'Doofinder Connector for OXID eShop',
     'thumbnail' => 'module.png',
-    'version' => '1.1.1',
+    'version' => '1.2.0',
     'author' => 'Daniel Kussin',
     'url' => 'https://www.kussin.de',
     'email' => 'daniel.kussin@kussin.de',
@@ -33,6 +33,11 @@ $aModule = array(
             'template' => 'widget/header/search.tpl',
             'block' => 'widget_header_search_form',
             'file' => '/views/blocks/widget_header_search_form.tpl'
+        ),
+        array(
+            'template' => 'widget/locator/sort.tpl',
+            'block' => 'widget_locator_sort',
+            'file' => '/views/blocks/widget_locator_sort.tpl'
         ),
         array(
             'template' => 'page/details/inc/related_products.tpl',
@@ -96,6 +101,21 @@ $aModule = array(
             'name' => 'sKussinDoofinderRecommendationsCurrencyFormat',
             'type' => 'str',
             'value' => '%v %S',
+        ),
+        array(
+            'group' => 'sKussinDoofinderFilterSettings',
+            'name' => 'blKussinDoofinderFilterEnabled',
+            'type' => 'bool',
+            'value' => 0,
+        ),
+        array(
+            'group' => 'sKussinDoofinderFilterSettings',
+            'name' => 'aKussinDoofinderFilterMapping',
+            'type' => 'aarr', 'value' => array(
+                'category' => 'categories',
+                'manufacturer' => 'brand',
+                'vendor' => 'vendor',
+            )
         ),
     )
 );
