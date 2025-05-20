@@ -4,7 +4,10 @@
  */
 $sMetadataVersion = '2.0';
 
+use OxidEsales\Eshop\Application\Controller\ArticleListController;
+use OxidEsales\Eshop\Application\Controller\ManufacturerListController;
 use OxidEsales\Eshop\Application\Controller\SearchController;
+use OxidEsales\Eshop\Application\Controller\VendorListController;
 
 /**
  * Module information
@@ -20,7 +23,10 @@ $aModule = array(
     'email' => 'daniel.kussin@kussin.de',
 
     'extend' => array(
+        ArticleListController::class => Kussin\Doofinder\Controller\ArticleListController::class,
+        ManufacturerListController::class => Kussin\Doofinder\Controller\ManufacturerListController::class,
         SearchController::class => Kussin\Doofinder\Controller\SearchController::class,
+        VendorListController::class => Kussin\Doofinder\Controller\VendorListController::class,
     ),
 
     'blocks' => array(
