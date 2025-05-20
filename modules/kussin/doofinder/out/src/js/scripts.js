@@ -1,13 +1,18 @@
 $(document).ready(function () {
     $('#kussin-doofinder-filter-btn').on('click', function () {
-
-        const sFilterParams = $(this).data('filter-params');
+        let sFilterParams = $(this).data('filter-params');
+        let sBaseUrl = window.location.href.split('#')[0];
 
         if (sFilterParams) {
+            if (sBaseUrl.length > 1 && sBaseUrl.endsWith('/')) {
+                sBaseUrl = sBaseUrl.slice(0, -1);
+            }
 
-            const sBaseUrl = window.location.href.split('#')[0];
+            if (sFilterParams.startsWith('/')) {
+                sFilterParams = sFilterParams.substring(1);
+            }
 
-            window.location.href = sBaseUrl + sFilterParams;
+            window.location.href = sBaseUrl + '/' + sFilterParams;
         }
     });
 });
