@@ -13,6 +13,9 @@ $(document).ready(function () {
             }
 
             window.location.href = sBaseUrl + '/' + sFilterParams;
+
+            // FIX RELOAD
+            window.location.reload(true);
         }
     });
 });
