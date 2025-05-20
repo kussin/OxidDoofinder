@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $('#kussin-doofinder-filter-btn').on('click', function () {
         let sFilterParams = $(this).data('filter-params');
+        let sUtmParams = $(this).data('utm-params');
         let sBaseUrl = window.location.href.split('#')[0];
 
         if (sFilterParams) {
@@ -12,10 +13,29 @@ $(document).ready(function () {
                 sFilterParams = sFilterParams.substring(1);
             }
 
-            window.location.href = sBaseUrl + '/' + sFilterParams;
+            const hasFragment = sFilterParams.indexOf('#') !== -1;
+            let sPath = '', sFragment = '';
 
-            // FIX RELOAD
-            window.location.reload(true);
+            if (hasFragment) {
+                const parts = sFilterParams.split('#');
+                sPath = parts[0];
+                sFragment = '#' + parts[1];
+            } else {
+                sPath = sFilterParams;
+            }
+
+            let sDoofinderUrl = sBaseUrl;
+            if (sPath) {
+                sDoofinderUrl += '/' + sPath;
+            }
+
+            if (sUtmParams) {
+                sDoofinderUrl += sDoofinderUrl.includes('?') ? '&' : '?' + sUtmParams;
+            }
+
+            sDoofinderUrl += sFragment;
+
+            window.location.assign(sDoofinderUrl);
         }
     });
 });

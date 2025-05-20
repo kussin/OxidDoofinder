@@ -27,4 +27,25 @@ class VendorListController extends VendorListController_parent
 
         return '/' . $sSearchHashId . '/fullscreen/' . implode('&', $aSearchTerm);
     }
+
+    public function getDoofinderUtmParams()
+    {
+        // LOAD CONFIG
+        $oConfig = Registry::getConfig();
+
+        // GET HASH ID
+        $bEnabled = $oConfig->getConfigParam('blKussinDoofinderFilterUtmTrackingEnabled');
+
+        if (!$bEnabled) {
+            return '';
+        }
+
+        return implode('&', [
+            'utm_source=oxideshop',
+            'utm_medium=referral',
+            'utm_campaign=doofinder',
+            'utm_content=vendor_filter',
+            'utm_term=' . urlencode(parent::getTitle()),
+        ]);
+    }
 }

@@ -123,5 +123,11 @@ $aModule = array(
                 'vendor' => 'vendor',
             )
         ),
+        array(
+            'group' => 'sKussinDoofinderFilterSettings',
+            'name' => 'blKussinDoofinderFilterUtmTrackingEnabled',
+            'type' => 'bool',
+            'value' => 1,
+        ),
     )
 );

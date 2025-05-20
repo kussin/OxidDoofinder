@@ -18,4 +18,5 @@ $aLang = array(
     'SHOP_MODULE_GROUP_sKussinDoofinderFilterSettings' => 'Filter settings',
     'SHOP_MODULE_blKussinDoofinderFilterEnabled' => 'Enable filter',
     'SHOP_MODULE_aKussinDoofinderFilterMapping' => 'Attribute mapping',
+    'SHOP_MODULE_blKussinDoofinderFilterUtmTrackingEnabled' => 'Enable utm tracking',
 );
