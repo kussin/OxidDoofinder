@@ -15,9 +15,16 @@ class ManufacturerListController extends ManufacturerListController_parent
         // GET HASH ID
         $sSearchHashId = $oConfig->getConfigParam('sKussinDoofinderSearchHashId');
 
-        // GET SEARCH TERM
-        $sSearchTerm = parent::getTitle();
+        // GET CATEGORY NAME
+        $sEncodedManufacturerName = urlencode(parent::getTitle());
 
-        return '/' . $sSearchHashId . '/fullscreen-brand-categories/m=and&q=' . urlencode($sSearchTerm);
+        // BUILD SEARCH TERM
+        $aSearchTerm = [
+            'f[brand][]=' . $sEncodedManufacturerName,
+            'm=and',
+            'q=' . $sEncodedManufacturerName,
+        ];
+
+        return '/' . $sSearchHashId . '/fullscreen/' . implode('&', $aSearchTerm);
     }
 }

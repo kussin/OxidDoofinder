@@ -15,9 +15,16 @@ class VendorListController extends VendorListController_parent
         // GET HASH ID
         $sSearchHashId = $oConfig->getConfigParam('sKussinDoofinderSearchHashId');
 
-        // GET SEARCH TERM
-        $sSearchTerm = parent::getTitle();
+        // GET CATEGORY NAME
+        $sEncodedVendorName = urlencode(parent::getTitle());
 
-        return '/' . $sSearchHashId . '/fullscreen-brand-categories/m=and&q=' . urlencode($sSearchTerm);
+        // BUILD SEARCH TERM
+        $aSearchTerm = [
+            'f[brand][]=' . $sEncodedVendorName,
+            'm=and',
+            'q=' . $sEncodedVendorName,
+        ];
+
+        return '/' . $sSearchHashId . '/fullscreen/' . implode('&', $aSearchTerm);
     }
 }
