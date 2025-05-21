@@ -10,12 +10,29 @@ for you.
 
 ### General Configuration
 
-Basic settings of the extension including the module activation.
+Basic settings of the extension.
 
 **The following configuration options are available:**
 
-1. [`installationId`](https://github.com/kussin/OxidDoofinder/blob/main/modules/kussin/doofinder/views/blocks/base_js.tpl#L11) - Doofinder Installation ID
-2. [`zone`](https://github.com/kussin/OxidDoofinder/blob/main/modules/kussin/doofinder/views/blocks/base_js.tpl#L12) - Doofinder Zone
+1. Search Hash ID
+
+### General Configuration V1 (Deprecated)
+
+Basic settings for V1 integration of the extension including the module activation.
+
+**The following configuration options are available:**
+
+1. Enable V1 Integration
+2. [`installationId`](https://github.com/kussin/OxidDoofinder/blob/main/modules/kussin/doofinder/views/blocks/base_js.tpl#L11) - Doofinder Installation ID
+3. [`zone`](https://github.com/kussin/OxidDoofinder/blob/main/modules/kussin/doofinder/views/blocks/base_js.tpl#L12) - Doofinder Zone
+
+### General Configuration V2 (Latest)
+
+Basic settings for V2 integration of the extension including the module activation.
+
+**The following configuration options are available:**
+
+1. Installation script url (compare with [Doofinder Documentation](https://support.doofinder.com/getting-started/installing-doofinder#step-4-script))
 
 ## Bugtracker and Feature Requests
 
@@ -33,4 +50,4 @@ Email: info@kussin.de
 
 ## Copyright
 
-&copy; 2006-2023 Kussin | eCommerce und Online-Marketing GmbH
+&copy; 2006-2025 Kussin | eCommerce und Online-Marketing GmbH

@@ -15,9 +15,11 @@ use OxidEsales\Eshop\Application\Controller\VendorListController;
 $aModule = array(
     'id' => 'kussin/doofinder',
     'title' => 'Kussin | Doofinder Connector for OXID eShop',
-    'description' => 'Doofinder Connector for OXID eShop',
+    'description' => '<p><strong>Doofinder Connector for OXID eShop</strong></p>
+        <p><strong>NOTE:</strong> The <a href="https://support.doofinder.com/search/layer-settings/create-a-layer#create-a-layer" 
+        target="_blank">search input CSS selector for Doofinder</a> is: <code style="color: red;">form.kussin-doofinder input#searchParam</code></p>',
     'thumbnail' => 'module.png',
-    'version' => '1.2.0',
+    'version' => '1.3.0',
     'author' => 'Daniel Kussin',
     'url' => 'https://www.kussin.de',
     'email' => 'daniel.kussin@kussin.de',
@@ -55,21 +57,34 @@ $aModule = array(
     'settings' => array(
         array(
             'group' => 'sKussinDoofinderSettings',
+            'name' => 'sKussinDoofinderSearchHashId',
+            'type' => 'str',
+            'value' => '#f2b9',
+        ),
+        array(
+            'group' => 'sKussinDoofinderSettingsV1',
+            'name' => 'blKussinDoofinderV1Enabled',
+            'type' => 'bool',
+            'value' => 0,
+        ),
+        array(
+            'group' => 'sKussinDoofinderSettingsV1',
             'name' => 'sKussinDoofinderInstallationId',
             'type' => 'str',
             'value' => '12345678-abcd-0000-wxyz-123456789xyz',
         ),
         array(
-            'group' => 'sKussinDoofinderSettings',
+            'group' => 'sKussinDoofinderSettingsV1',
             'name' => 'sKussinDoofinderZone',
             'type' => 'str',
             'value' => 'eu1',
         ),
+
         array(
-            'group' => 'sKussinDoofinderSettings',
-            'name' => 'sKussinDoofinderSearchHashId',
+            'group' => 'sKussinDoofinderSettingsV2',
+            'name' => 'sKussinDoofinderInstallationScriptUrl',
             'type' => 'str',
-            'value' => '#f2b9',
+            'value' => 'https://eu1-config.doofinder.com/2.x/12345678-abcd-0000-wxyz-123456789xyz.js',
         ),
 
         array(

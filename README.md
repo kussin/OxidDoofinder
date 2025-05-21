@@ -57,4 +57,4 @@ Email: info@kussin.de
 
 ## Copyright
 
-&copy; 2006-2023 Kussin | eCommerce und Online-Marketing GmbH
+&copy; 2006-2025 Kussin | eCommerce und Online-Marketing GmbH

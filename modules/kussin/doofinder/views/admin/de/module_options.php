@@ -3,9 +3,15 @@ $aLang = array(
     'charset' => 'utf-8',
 
     'SHOP_MODULE_GROUP_sKussinDoofinderSettings' => 'Doofinder Einstellungen',
+    'SHOP_MODULE_sKussinDoofinderSearchHashId' => 'Search Hash ID',
+
+    'SHOP_MODULE_GROUP_sKussinDoofinderSettingsV1' => 'Doofinder Einstellungen V1',
+    'SHOP_MODULE_blKussinDoofinderV1Enabled' => 'Aktiviere V1 Integration (Veraltet)',
     'SHOP_MODULE_sKussinDoofinderInstallationId' => 'Installation ID',
     'SHOP_MODULE_sKussinDoofinderZone' => 'Zone',
-    'SHOP_MODULE_sKussinDoofinderSearchHashId' => 'Seach Hash ID',
+
+    'SHOP_MODULE_GROUP_sKussinDoofinderSettingsV2' => 'Doofinder Einstellungen V2 (Latest)',
+    'SHOP_MODULE_sKussinDoofinderInstallationScriptUrl' => 'Installations-Script-URL',
 
     'SHOP_MODULE_GROUP_sKussinDoofinderRecommendationsSettings' => 'Recommendations Einstellungen',
     'SHOP_MODULE_blKussinDoofinderRecommendationsEnabled' => 'Aktiviere Recommendations',
