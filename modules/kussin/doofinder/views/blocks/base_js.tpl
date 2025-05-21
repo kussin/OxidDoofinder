@@ -2,10 +2,13 @@
 
 [{assign var="oConf" value=$oViewConf->getConfig()}]
 
+[{assign var="blV1Enabled" value=$oConf->getConfigParam('blKussinDoofinderV1Enabled')}]
 [{assign var="sInstallationId" value=$oConf->getConfigParam('sKussinDoofinderInstallationId')}]
 [{assign var="sZone" value=$oConf->getConfigParam('sKussinDoofinderZone')}]
+[{assign var="sInstallationScriptUrl" value=$oConf->getConfigParam('sKussinDoofinderInstallationScriptUrl')}]
 
-[{if $sInstallationId}]
+[{if $blV1Enabled && $sInstallationId}]
+    [{* Doofinder V1 Integration (Deprecated) *}]
     <script>
         [{capture assign="sJsInline"}]
         const dfLayerOptions = {
@@ -22,4 +25,8 @@
         [{/capture}]
     </script>
     [{oxscript add=$sJsInline}]
+
+[{elseif $sInstallationScriptUrl}]
+    [{* Doofinder V2 Integration (Latest) *}]
+    <script src="[{$sInstallationScriptUrl}]" async></script>
 [{/if}]
