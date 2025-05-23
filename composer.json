@@ -1,6 +1,6 @@
 {
     "name":        "kussin/doofinder",
-    "version":     "1.3.0-bwc",
+    "version":     "1.3.1-bwc",
     "description": "Kussin | Doofinder Connector for OXID eShop 6.0 (BWC Version)",
     "type":        "oxideshop-module",
     "keywords":    [

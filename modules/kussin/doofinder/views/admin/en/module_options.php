@@ -23,6 +23,10 @@ $aLang = array(
 
     'SHOP_MODULE_GROUP_sKussinDoofinderFilterSettings' => 'Filter settings',
     'SHOP_MODULE_blKussinDoofinderFilterEnabled' => 'Enable filter',
+    'SHOP_MODULE_sKussinDoofinderFilterLayerType' => 'Layer type',
+    'SHOP_MODULE_sKussinDoofinderFilterLayerType_embedded' => 'Embedded',
+    'SHOP_MODULE_sKussinDoofinderFilterLayerType_floating' => 'Floating',
+    'SHOP_MODULE_sKussinDoofinderFilterLayerType_fullscreen' => 'Fullscreen',
     'SHOP_MODULE_aKussinDoofinderFilterMapping' => 'Attribute mapping',
     'SHOP_MODULE_blKussinDoofinderFilterUtmTrackingEnabled' => 'Enable utm tracking',
 );

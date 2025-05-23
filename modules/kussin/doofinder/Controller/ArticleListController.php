@@ -15,6 +15,9 @@ class ArticleListController extends ArticleListController_parent
         // GET HASH ID
         $sSearchHashId = $oConfig->getConfigParam('sKussinDoofinderSearchHashId');
 
+        // LAYER TYPE
+        $sLayerType = $oConfig->getConfigParam('sKussinDoofinderFilterLayerType');
+
         // GET CATEGORY NAME
         $sEncodedCategoryName = urlencode(parent::getTitle());
 
@@ -25,7 +28,7 @@ class ArticleListController extends ArticleListController_parent
             'q=' . $sEncodedCategoryName,
         ];
 
-        return '/' . $sSearchHashId . '/fullscreen/' . implode('&', $aSearchTerm);
+        return '/' . $sSearchHashId . '/' . $sLayerType . '/' . implode('&', $aSearchTerm);
     }
 
     public function getDoofinderUtmParams()
