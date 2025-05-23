@@ -19,7 +19,7 @@ $aModule = array(
         <p><strong>NOTE:</strong> The <a href="https://support.doofinder.com/search/layer-settings/create-a-layer#create-a-layer" 
         target="_blank">search input CSS selector for Doofinder</a> is: <code style="color: red;">form.kussin-doofinder input#searchParam</code></p>',
     'thumbnail' => 'module.png',
-    'version' => '1.3.0',
+    'version' => '1.3.1',
     'author' => 'Daniel Kussin',
     'url' => 'https://www.kussin.de',
     'email' => 'daniel.kussin@kussin.de',
@@ -128,6 +128,13 @@ $aModule = array(
             'name' => 'blKussinDoofinderFilterEnabled',
             'type' => 'bool',
             'value' => 0,
+        ),
+        array(
+            'group' => 'sKussinDoofinderFilterSettings',
+            'name' => 'sKussinDoofinderFilterLayerType',
+            'type' => 'select',
+            'value' => 'embedded',
+            'constraints' => 'fullscreen|floating|embedded',
         ),
         array(
             'group' => 'sKussinDoofinderFilterSettings',
