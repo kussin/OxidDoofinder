@@ -55,6 +55,14 @@ Email: info@kussin.de
 
 [End-User Software License Agreement](LICENSE.md)
 
+## About Kussin
+
+This module is developed and maintained by Kussin | eCommerce und
+Online-Marketing GmbH, an experienced OXID eShop agency and
+eCommerce development company.
+
+Learn more about our [OXID eShop development and agency services](https://www.kussin.de/oxid-agentur/).
+
 ## Copyright
 
 &copy; 2006-2025 Kussin | eCommerce und Online-Marketing GmbH
